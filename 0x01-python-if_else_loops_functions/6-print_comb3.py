@@ -7,4 +7,4 @@ for digt1 in range(0, 10):
         elif digt1 == 8 and digt2 == 9:
             print("{}{}".format(digt1, digt2), end="\n")
         else:
-            print(f"{}{}".format(digit1, digit2), end=", ")
+            print("{}{}".format(digit1, digit2), end=", ")
