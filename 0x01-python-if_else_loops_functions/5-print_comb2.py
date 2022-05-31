@@ -2,6 +2,6 @@
 
 for i in range(0, 100):
     if i == 99:
-        print("{i}".format(i), end="\n")
+        print("{d}".format(i), end="\n")
     else:
-        print("{i:02}".format(i), end = ", ")
+        print("{d:02}".format(i), end=", ")
