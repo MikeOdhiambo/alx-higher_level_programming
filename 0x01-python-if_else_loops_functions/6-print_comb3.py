@@ -5,6 +5,6 @@ for digt1 in range(0, 10):
         if digt1 - digt2 >= 0:
             continue
         elif digt1 == 8 and digt2 == 9:
-            print(f"{}{}".format(digt1, digt2), end="\n")
+            print("{}{}".format(digt1, digt2), end="\n")
         else:
             print(f"{}{}".format(digit1, digit2), end=", ")
