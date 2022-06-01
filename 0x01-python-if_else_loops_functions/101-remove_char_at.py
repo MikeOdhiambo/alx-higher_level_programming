@@ -6,5 +6,5 @@ def remove_char_at(str, n):
     for char in str:
         if pos != n:
             newStr += str[pos]
-        pos++
+        pos += 1
     return newStr
