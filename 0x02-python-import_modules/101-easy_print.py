@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import random_file
+import print_phrase
