@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
-    list_len = 0
-    for list_len in range(x):
+    for i in range(x):
         try:
-            print("{}".format(my_list[list_len]), end="")
+            print("{:d}".format(my_list[i]), end="")
         except IndexError:
+            i = i - 1
             break
-        else:
-            list_len += 1
-
     print("")
-    return list_len
+    try:
+        return i + 1
+    except UnboundLocalError:
+        return 0
