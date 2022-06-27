@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-
-from curses.textpad import rectangle
+""" A module defining a Rectangle class """
 
 
 class Rectangle:

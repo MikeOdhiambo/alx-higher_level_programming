@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from turtle import width
+""" A module defining a Rectangle class """
 
 
 class Rectangle:
