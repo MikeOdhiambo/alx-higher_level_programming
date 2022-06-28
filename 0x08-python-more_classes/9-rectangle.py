@@ -21,8 +21,8 @@ class Rectangle:
             width(int): width
             height(int): height
         """
-        self.__height = height
-        self.__width = width
+        self.height = height
+        self.width = width
         type(self).number_of_instances += 1
 
     @property
@@ -103,5 +103,5 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        """ Returns Rectangle instance with width == height == size"""
+        """ Returns Rectangle instance with width == height == size """
         return cls(size, size)
