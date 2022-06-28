@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+""" A module that adds two numbers """
+
+
+def add_integer(a, b=98):
+    """ Adds two numbers and returns the result
+    
+    Args:
+        a(int/float): first parameter
+        b(int/float): second parameter
+    """
+    if type(a) != int and type(a) != float:
+        raise TypeError("a must be an integer")
+    if type(b) != int and type(b) != float:
+        raise TypeError("b must be an integer")
+    return int(a) + int(b)
