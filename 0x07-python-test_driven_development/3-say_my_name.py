@@ -5,7 +5,7 @@
 def say_my_name(first_name, last_name=""):
     """
     Prints a formatted string with full name
-    
+
     Args:
         first_name: first string
         last_name: second string

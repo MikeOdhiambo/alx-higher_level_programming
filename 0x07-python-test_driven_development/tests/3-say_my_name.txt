@@ -1,0 +1,38 @@
+Testing the module ''3-say_my_name''
+=====================================
+importing module:
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+both strings:
+    >>> say_my_name("Eren", "Yeager")
+    My name is Eren Yeager
+
+both not strings:
+    >>> say_my_name(1337, 3000)
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+
+first string:
+    >>> say_my_name("Eren")
+    My name is Eren 
+
+first not a string:
+    >>> say_my_name(3000, "Yeager")
+    Traceback (most recent call last):
+        ...
+    TypeError: first_name must be a string
+
+empty first string:
+    >>> say_my_name("", "Yeager")
+    My name is  Yeager
+
+last not a string:
+    >>> say_my_name("Eren", 3000)
+    Traceback (most recent call last):
+        ...
+    TypeError: last_name must be a string
+
+empty last string:
+    >>> say_my_name("Eren", "")
+    My name is Eren 

@@ -4,7 +4,7 @@
 
 def matrix_divided(matrix, div):
     """ Divides a matrix by div
-    
+
     Args:
         a(matrix): an n x n matrix
         div(int): number for dividing matrix

@@ -4,7 +4,7 @@
 
 def add_integer(a, b=98):
     """ Adds two numbers and returns the result
-    
+
     Args:
         a(int/float): first parameter
         b(int/float): second parameter
