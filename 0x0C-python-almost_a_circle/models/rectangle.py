@@ -4,7 +4,7 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """ 
+    """
     Rectangle class that inherits from the Base class
 
     Attributes:
@@ -37,6 +37,7 @@ class Rectangle(Base):
         elif attrbt is "x" or attrbt is "y":
             if attrbt < 0:
                 raise ValueError(attrbt + "must be >= 0")
+
     @property
     def width(self):
         """ Get width """
@@ -84,6 +85,3 @@ class Rectangle(Base):
     def area(self):
         """ Returns the area of the rectangle """
         return self.__width * self.__height
-
-
-
