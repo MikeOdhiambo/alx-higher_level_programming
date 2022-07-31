@@ -17,7 +17,7 @@ class Rectangle(Base):
         """ Initializes an instance of Rectangle """
         super().__init__(id)
         self.width = width
-        self.heigh = height
+        self.height = height
         self.x = x
         self.y = y
 
