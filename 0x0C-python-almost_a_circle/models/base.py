@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Base.py """
+""" Base class providing a prototype for inheriting classes """
 
 
 class Base:
