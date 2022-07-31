@@ -21,65 +21,60 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-    def check_val(self, attrbt, value):
-        """
-        Validates the type and range of attributes
-
-        Args:
-            attrbt(int): Attribute to validate
-            value(int): Value of the attribute
-        """
-        if type(value) is not int:
-            raise TypeError(attrbt + "must be an integer")
-        elif attrbt is "width" or attrbt is "height":
-            if attrbt <= 0:
-                raise ValueError(attrbt + "must be > 0")
-        elif attrbt is "x" or attrbt is "y":
-            if attrbt < 0:
-                raise ValueError(attrbt + "must be >= 0")
-
-    @property
+        @property
     def width(self):
         """ Get width """
         return self.__width
 
     @width.setter
     def width(self, value):
-        """ Set the value for width """
-        self.check_val("width", value)
+        """ Set width """
+        if type(value) is not int:
+            raise TypeError("width must be an integer")
+        if value <= 0:
+            raise ValueError("width must be > 0")
         self.__width = value
 
     @property
     def height(self):
-        """ Get height"""
+        """ Get height """
         return self.__height
 
     @height.setter
     def height(self, value):
-        """ Set the value for height """
-        self.check_val("height", value)
+        """ Set height """
+        if type(value) is not int:
+            raise TypeError("height must be an integer")
+        if value <= 0:
+            raise ValueError("height must be > 0")
         self.__height = value
 
     @property
     def x(self):
-        """ Get x """
+        """ Get x attr """
         return self.__x
 
-    @width.setter
+    @x.setter
     def x(self, value):
-        """ Set the value for x """
-        self.check_val("x", value)
+        """ Set x attr """
+        if type(value) is not int:
+            raise TypeError("x must be an integer")
+        if value < 0:
+            raise ValueError("x must be >= 0")
         self.__x = value
 
     @property
     def y(self):
-        """ Get y """
+        """ Get y attr """
         return self.__y
 
-    @width.setter
+    @y.setter
     def y(self, value):
-        """ Set the value for y """
-        self.check_val("y", value)
+        """ Set y attr """
+        if type(value) is not int:
+            raise TypeError("y must be an integer")
+        if value < 0:
+            raise ValueError("y must be >= 0")
         self.__y = value
 
     def area(self):
