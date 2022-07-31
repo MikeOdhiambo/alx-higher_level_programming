@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""
-This module contains the Base class for rectangle and square classes
-"""
+""" Base.py """
+
+
 class Base:
-    """ Define base class """
+    """ Defines a super class for subsequent classes """
     __nb_objects = 0
-    
+
     def __init__(self, id=None):
         """
         Initializes instance variables
