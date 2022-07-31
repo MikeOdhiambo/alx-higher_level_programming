@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-""" rectangle.py """
+#!/usr/bin/python3
+""" A Rectangle class that inherits from the Base class """
 from models.base import Base
 
 
