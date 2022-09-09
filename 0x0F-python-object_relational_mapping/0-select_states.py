@@ -8,7 +8,7 @@ def listStates(username, pass, db_name):
     db = MySQLdb.connect(host="localhost", port=3306, user=username,
                          passwd=pass, db=db_name)
     cur = db.cursor()
-    cur.execute("SELECT id, name FROM states ORDER BY db_name.id ASC")
+    cur.execute("SELECT * FROM states ORDER BY db_name.id ASC")
     rows = cur.fetchall()
     for row in rows:
         print(row)
