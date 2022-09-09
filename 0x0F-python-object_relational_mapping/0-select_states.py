@@ -1,18 +1,22 @@
 #!/usr/bin/python3
-"""Lists all states from database"""
-import MySQLdb
+"""0-select_states.py - Lists states"""
 
 
-def listStates(username, pass, dbse):
-    """Lists all states from the database hbtn_0e_0_usa"""
-    db = MySQLdb.connect(host='localhost', port=3306,
-                         user=username, passwd=pass, db=dbse)
+def listStates(username, pass, db_name):
+    """Lists all the states in the database hbtn_0e_0_usa"""
+
+    db = MySQLdb.connect(host="localhost", port=3306, user=username,
+                         passwd=pass, db=db_name)
     cur = db.cursor()
-    cur.execute("SELECT %s, %s FROM dbse ORDER BY dbse.id", (id, name))
+    cur.execute("SELECT %s, %s FROM db_name ORDER BY db_name.id", (id, name))
     rows = cur.fetchall()
     for row in rows:
         print(row)
+    cur.close()
+    db.close()
 
 
 if __name__ == "__main__":
-    listStates()
+    import MySQLdb
+    import sys
+    listStates(sys.argv[1], sys.argv[2], sys.argv[3])
