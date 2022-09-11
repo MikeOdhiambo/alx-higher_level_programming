@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
     cur = db.cursor()
     cur.execute("""SELECT * FROM states
-                WHERE name=%s
+                WHERE states.name=%s
                 ORDER BY states.id ASC""", (argv[4]))
     rows = cur.fetchall()
     for row in rows:
