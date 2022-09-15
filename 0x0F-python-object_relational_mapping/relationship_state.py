@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Definition a State class related to City"""
+"""Definition of the State class
+"""
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
@@ -7,8 +8,7 @@ from relationship_city import City, Base
 
 
 class State(Base):
-    """Improvement on the filemodel_state.py,
-       saved as relationship_state.py"""
+    """Modifies model_state.py"""
 
     __tablename__ = 'states'
     id = Column(Integer, autoincrement=True,

@@ -1,14 +1,14 @@
 #!/usr/bin/python3
-"""Defines a City class"""
-
+"""Definition of the City class
+"""
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey
-from sqlalchemy.orm import relationship
-from model_state import Base, State
+
+Base = declarative_base()
 
 
 class City(Base):
-    """Class City"""
+    """Modifies the file model_city.py"""
 
     __tablename__ = 'cities'
     id = Column(Integer, autoincrement=True,
