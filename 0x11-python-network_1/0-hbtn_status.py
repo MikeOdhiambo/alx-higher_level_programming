@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""hbtn_status.py- Fetches a URL and prints it in a formatted manner """
+
 
 if __name__ == "__main__":
     from urllib import request
