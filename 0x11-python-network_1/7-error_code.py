@@ -12,4 +12,3 @@ if __name__ == "__main__":
         print("Error code: {}".format(resp.status_code))
     else:
         print(resp.text)
-
