@@ -8,8 +8,7 @@ if __name__ == "__main__":
 
     repo = argv[1]
     owner = argv[2]
-    url = 'https://api.github.com/repos/{}/{}/commits'.\
-            format(owner, repo)
+    url = 'https://api.github.com/repos/{}/{}/commits'.format(owner, repo)
 
     req = requests.get(url)
     if req.status_code == 200:
