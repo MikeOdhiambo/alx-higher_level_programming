@@ -14,6 +14,6 @@ if __name__ == "__main__":
     if req.status_code == 200:
         req_json = req.json()
         for i in range(10):
-            sha_code = req_json[i]['sha']
-            user = req_json[i]['commit']['author']['name']
+            sha_code = req_json[i].get('sha')
+            user = req_json[i].get('commit').get('author').get('name')
             print("{}: {}".format(sha_code, user))
