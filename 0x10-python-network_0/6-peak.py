@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+"""peak.py - Calculates the peak in a list of numbers"""
+
 
 def find_peak(list_of_integers):
+    """Returns the peak in a given list"""
     len_lst = len(list_of_integers)
 
     if len_lst == 0:
