@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 
 const request = require('request');
 request.get(`https://swapi-api.hbtn.io/api/films/`, function (error, response, body) {
