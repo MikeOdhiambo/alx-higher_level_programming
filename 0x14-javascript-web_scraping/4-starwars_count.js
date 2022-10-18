@@ -1,7 +1,7 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 
 const request = require('request');
-request.get('https://swapi-api.hbtn.io/api/films/', function (error, response, body) {
+request.get(process.argv[2], function (error, response, body) {
   if (error) {
     console.log(error);
   }
@@ -9,7 +9,6 @@ request.get('https://swapi-api.hbtn.io/api/films/', function (error, response, b
   const res = JSON.parse(body);
   let count = 0;
   const resArray = res.results;
-  // console.log(resArray[0]);
   for (let i = 0; i < resArray.length; i++) {
     if ((resArray[i].characters.includes(wedge))) {
       count += 1;
